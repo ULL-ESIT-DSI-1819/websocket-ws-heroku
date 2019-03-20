@@ -7,7 +7,11 @@
 <body>
   <p id="server-time"></p> 
   <script type="text/javascript">
-    let HOST = location.origin.replace(/^http/,'ws');
+    /*
+    location.origin: Return the protocol, hostname and port number of a URL. Something like:
+    "https://dsi-ws-example.herokuapp.com"
+    */
+    let HOST = location.origin.replace(/^http/,'ws'); // "wss://dsi-ws-example.herokuapp.com"
     let ws = new WebSocket(HOST);
     let element = document.getElementById("server-time");
 
