@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Websockets and Heroku</title>
+</head>
+<body>
+  <p id="server-time"></p> 
+  <script type="text/javascript">
+    let HOST = location.origin.replace(/^http/,'ws');
+    let ws = new WebSocket(HOST);
+    let element = document.getElementById("server-time");
+
+    ws.onmessage = (event) => {
+      element.innerHTML = "Server time: "+event.data;
+    }; 
+  </script>
+</body>
+</html>

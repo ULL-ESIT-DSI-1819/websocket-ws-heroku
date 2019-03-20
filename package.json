@@ -1,0 +1,22 @@
+{
+  "name": "websockets-heroku",
+  "version": "1.0.0",
+  "description": "* Tutorial [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)",
+  "main": "index.js",
+  "engines": {
+    "node": "10.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Casiano Rodriguez-Leon <casiano.rodriguez.leon@gmail.com> (https://github.com/crguezl)",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "express": "^4.16.4",
+    "utf-8-validate": "^5.0.2",
+    "ws": "^6.2.0"
+  }
+}
