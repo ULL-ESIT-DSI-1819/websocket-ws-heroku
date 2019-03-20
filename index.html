@@ -10,6 +10,7 @@
     /*
     location.origin: Return the protocol, hostname and port number of a URL. Something like:
     "https://dsi-ws-example.herokuapp.com"
+    See https://developer.mozilla.org/es/docs/Web/API/Window/location
     */
     let HOST = location.origin.replace(/^http/,'ws'); // "wss://dsi-ws-example.herokuapp.com"
     let ws = new WebSocket(HOST);
